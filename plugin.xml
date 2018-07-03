@@ -1,2 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.tv.unitplug" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>UnitInit</name><js-module name="UnitInit" src="www/UnitInit.js"><clobbers target="cordova.plugins.UnitInit" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="UnitInit"><param name="android-package" value="com.tv.unitplug.UnitInit" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/UnitInit.java" target-dir="src/com/tv/unitplug/UnitInit" /></platform></plugin>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="com.tv.unitplug" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>UnitInit</name>
+    <js-module name="UnitInit" src="www/UnitInit.js">
+        <clobbers target="cordova.plugins.UnitInit" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="UnitInit">
+                <param name="android-package" value="com.tv.unitplug.UnitInit" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/UnitInit.java" target-dir="src/com/tv/unitplug/UnitInit" />
+
+        <framework src="src/android/unit-plugin.gradle" custom="true" type="gradleReference" />
+
+        <resource-file src="unity-ads.aar" target="libs/unity-ads.aar" />
+    </platform>
+</plugin>
