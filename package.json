@@ -1,0 +1,25 @@
+{
+  "name": "com.tv.unitplug",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.tv.unitplug",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjaymobpair/UnityPlugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "sanjay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjaymobpair/UnityPlugin/issues"
+  },
+  "homepage": "https://github.com/sanjaymobpair/UnityPlugin#readme"
+}
