@@ -28,4 +28,5 @@
   <component name="ProjectResources">
     <default-html-doctype>http://schemas.android.com/apk/res/android</default-html-doctype>
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
