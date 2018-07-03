@@ -15,6 +15,6 @@
         <source-file src="src/android/UnitInit.java" target-dir="src/com/tv/unitplug" />
 
         <framework src="src/android/unit-plugin.gradle" custom="true" type="gradleReference" />
-        <resource-file src="src/android/unity-ads.aar" target="libs/unity-ads.aar" />
+        <resource-file src="src/android/unity-ads.aar" target="libs" />
     </platform>
 </plugin>
