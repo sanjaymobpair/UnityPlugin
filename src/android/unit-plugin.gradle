@@ -6,14 +6,14 @@ repositories{
 }
 
 dependencies {
-    compile(name:'unity-ads', ext:'aar')
+    implementation(name:'unity-ads', ext:'aar')
 }
 
 android {
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 27
     }
 
     packagingOptions {
