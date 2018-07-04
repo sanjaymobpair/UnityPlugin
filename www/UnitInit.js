@@ -1,5 +1,8 @@
 var exec = require('cordova/exec');
+var modex = {};
 
-exports.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'UnitInit', 'coolMethod', [arg0]);
+modex.coolMethod = function (success,error){
+     console.log('cool...');
+     cordova.exec(success, error, 'UnitInit', 'coolMethod', []);
 };
+module.exports = modex;

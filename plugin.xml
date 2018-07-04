@@ -13,6 +13,7 @@
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
         <source-file src="src/android/UnitInit.java" target-dir="src/com/tv/unitplug" />
+        <framework src="com.android.support:appcompat-v7:27.1.1"/>
         <framework src="com.unity3d.ads:unity-ads:2.2.0" />
         <framework src="com.google.android.gms:play-services-ads:15.0.1" />
         <framework src="com.google.ads.mediation:unity:2.2.0.0" />
