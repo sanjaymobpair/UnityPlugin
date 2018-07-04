@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54bb58ef-0241-46bb-8aaf-cf30f306944b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/android/UnitInit.java" afterPath="$PROJECT_DIR$/src/android/UnitInit.java" />
       <change beforePath="$PROJECT_DIR$/www/UnitInit.js" afterPath="$PROJECT_DIR$/www/UnitInit.js" />
     </list>
@@ -15,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UnitInit.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UnitInit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/android/UnitInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="444">
+              <caret line="68" column="1" lean-forward="false" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnitInit.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UnitInit.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/UnitInit.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -63,8 +62,8 @@
         <option value="$PROJECT_DIR$/build-extras.gradle" />
         <option value="$PROJECT_DIR$/src/android/unit-plugin.gradle" />
         <option value="$PROJECT_DIR$/plugin.xml" />
-        <option value="$PROJECT_DIR$/src/android/UnitInit.java" />
         <option value="$PROJECT_DIR$/www/UnitInit.js" />
+        <option value="$PROJECT_DIR$/src/android/UnitInit.java" />
       </list>
     </option>
   </component>
@@ -413,21 +412,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/android/UnitInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/UnitInit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/android/UnitInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="68" column="1" lean-forward="false" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
