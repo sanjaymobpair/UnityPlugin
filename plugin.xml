@@ -16,6 +16,5 @@
         <framework src="com.unity3d.ads:unity-ads:2.2.0" />
         <framework src="com.google.android.gms:play-services-ads:15.0.1" />
         <framework src="com.google.ads.mediation:unity:2.2.0.0" />
-        <framework custom="true" src="src/android/unit-plugin.gradle" type="gradleReference" />
     </platform>
 </plugin>
