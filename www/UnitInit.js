@@ -7,4 +7,3 @@ module.exports = {
         cordova.exec(null,null,'UnitInit','__showAds');
     },
 };
-});
