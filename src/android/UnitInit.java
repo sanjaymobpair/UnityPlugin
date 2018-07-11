@@ -25,11 +25,22 @@ public class UnitInit extends CordovaPlugin implements IUnityAdsListener {
     private static final String PREFERENCES = "settings";
     private String ADS_KEY = "ADSKEY";
 
+    /**
+     *
+     * @param action          The action to execute.
+     * @param args            The exec() arguments.
+     * @param callbackContext The callback context used when calling back into JavaScript.
+     * @return
+     * @throws JSONException
+     */
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         Context context = this.cordova.getContext();
         mPrefs = context.getSharedPreferences(PREFERENCES, 0);
 
+        /**
+         * Call Method which equal to action coming from javascript
+         */
         if (action.equals("__setUpAd")) {
             Log.d(TAG, "__setUpAd : " + args.getString(0));
             __InitAds(args);
@@ -41,12 +52,20 @@ public class UnitInit extends CordovaPlugin implements IUnityAdsListener {
         return false;
     }
 
+    /**
+     * this will called when call __setUpAd method will called
+     * it will get gameId from argument and store in preference so, no need to store it every time
+     * than after it will call initialize method of UnityAds Class
+     * @param args value given by user in Jsonarray
+     */
     private void __InitAds(JSONArray args) {
         String gameId = getAds_Key();
         if (gameId.equals("null")) {
             Log.d(TAG, " : IF");
             try {
                 String gameIdArgs = args.getString(0);
+
+                // TODO: 10/07/18 intialize unityads
                 UnityAds.initialize(cordova.getActivity(), gameIdArgs, this);
                 setAds_Key(gameIdArgs);
             } catch (JSONException e) {
@@ -54,10 +73,15 @@ public class UnitInit extends CordovaPlugin implements IUnityAdsListener {
             }
         } else {
             Log.d(TAG, " : ELSE");
+            // TODO: 10/07/18 intialize unityads
             UnityAds.initialize(cordova.getActivity(), gameId, this);
         }
     }
 
+    /**
+     * it will called when __ShowAds method will called by user
+     * it will check if unityads is ready than after it will show #show method of UnityAds
+     */
     private void __ShowAds() {
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -92,14 +116,17 @@ public class UnitInit extends CordovaPlugin implements IUnityAdsListener {
 
     }
 
+    // TODO: 10/07/18 store string preference
     private void putString(String name, String value) {
         mPrefs.edit().putString(name, value).apply();
     }
 
+    // TODO: 10/07/18 setAds Key in preference
     private void setAds_Key(String key) {
         putString(ADS_KEY, key);
     }
 
+    // TODO: 10/07/18 getAdskey
     private String getAds_Key() {
         return mPrefs.getString(ADS_KEY, "null");
     }
