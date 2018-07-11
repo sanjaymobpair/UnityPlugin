@@ -83,17 +83,10 @@ public class UnitInit extends CordovaPlugin implements IUnityAdsListener {
      * it will check if unityads is ready than after it will show #show method of UnityAds
      */
     private void __ShowAds() {
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(TAG, " : inSide");
-                if (UnityAds.isReady()) {
-                    Log.d(TAG, " : isReady");
-                    UnityAds.show(cordova.getActivity());
-                }
-            }
-        }, 10000);
+        if (UnityAds.isReady()) {
+            Log.d(TAG, " : isReady");
+            UnityAds.show(cordova.getActivity());
+        }
     }
 
     @Override
