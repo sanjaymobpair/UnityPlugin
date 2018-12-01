@@ -43,11 +43,21 @@ public class UnitInit extends CordovaPlugin implements IUnityAdsListener {
          */
         if (action.equals("__setUpAd")) {
             Log.d(TAG, "__setUpAd : " + args.getString(0));
-            __InitAds(args);
+            cordova.getThreadPool().execute(new Runnable() {
+                @Override
+                public void run() {
+                    __InitAds(args);
+                }
+            });
             return true;
         } else if (action.equals("__showAds")) {
             Log.d(TAG, "__showAds called...");
-            __ShowAds();
+            cordova.getThreadPool().execute(new Runnable() {
+                @Override
+                public void run() {
+                    __ShowAds();
+                }
+            });
         }
         return false;
     }
